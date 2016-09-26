@@ -7,6 +7,8 @@
 // something like:
 // lengths(words)  # => [5, 4, 2, 2, 4]
 
+
+//#1
 console.log('hello!!')
 var list = ['hello', 'what', 'is', 'up', 'dude'];
 
@@ -36,6 +38,8 @@ For example, the transmogrified result of 5, 3, and 2 is (5 times 3) to the powe
 **transmogrifier(13, 12, 5)
 **transmogrifier(42, 13, 7)*/
 
+
+//#2
 var firstNumber;
 var secondNumber;
 var thirdNumber;
@@ -58,6 +62,8 @@ If the accent is not recognized, just return the sentence as-is.
 ====> should look like this:toonify("daffy", "so you smell like sausage")
 #=> "tho you thmell like thauthage"
 */
+
+//#3
 var accent;
 var sentence = "what are you looking at, rascally rabbits!";
 
@@ -87,23 +93,24 @@ wordReverse("Now I know what a TV dinner feels like")
 # => "like feels dinner TV a what know I Now"
 */
 
-var enterASentence='can i do this';
+
+//#4
+var enterASentence; 
 
 function wordReverse(enterASentence) {
-	var splitSentence = enterASentence.split(space);
-	return splitSentence;
-var space='';
+	
+	var splitSentence = enterASentence.split(' ').reverse(' '); 
+	return splitSentence;  
+	
 };
 
-wordReverse()
+wordReverse("Can i do this?")
+//returns ["this?", "do", "i", "Can"]....yay!!! one more before midnight.
 
-//example below:
-var str = 'asdfghjkl';
-var strReverse = str.split('').reverse().join(''); // 'lkjhgfdsa'
 
-//cant finish this one right now--saturday night:10:23
 
-/*Write a function letterReverse that accepts a single argument, a string. The function should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
+/*Write a function letterReverse that accepts a single argument, a string. 
+**The function should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
 References:
 MDN: String.split()
 MDN: Array.reverse()
@@ -112,13 +119,36 @@ letterReverse("Now I know what a TV dinner feels like")
 letterReverse("Put Hans back on the line")
 # => "tuP snaH kcab no eht enil"*/
 
-sentenceInput="Still not sure about these functions.";
+//#5
+var  lettersOfWordsReversed;
 
-function letterReverse(sentenceInput){
-	var theSentence= sentenceInput.reverse();
-	return theSentence;
+function letterReverse(lettersOfWordsReversed) {
+	
+	var splitSentence = lettersOfWordsReversed.split(' '); 
+	return splitSentence;  
+	nowReverse=splitSentence.reverse();return nowReverse;
+};
+
+letterReverse("Can i do this?")
+//couldnt finish sun:11:17pm
+
+/*Write a function longest that accepts a single argument, an array of strings.
+ The method should return the longest word in the array. 
+ In case of a tie, the method should return the word that appears first in the array.
+Reference: MDN: String.length
+longest(["oh", "good", "grief"]) # => "grief"
+longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
+# => "unrequited"*/
+
+
+//#6
+var stringArray;
+
+function longestWord(stringArray){
+
 
 };
+//out of time
 
 
 
